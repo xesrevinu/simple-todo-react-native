@@ -1,0 +1,52 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "jsx": "react-jsx",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "baseUrl": ".",
+    "rootDir": ".",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "moduleDetection": "force",
+    "downlevelIteration": true,
+    "allowImportingTsExtensions": true,
+    "strict": true,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitReturns": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noFallthroughCasesInSwitch": true,
+    "noEmitOnError": false,
+    "noErrorTruncation": true,
+    "allowJs": false,
+    "checkJs": false,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "noUncheckedIndexedAccess": false,
+    "strictNullChecks": true,
+    "sourceMap": true,
+    "incremental": true,
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "verbatimModuleSyntax": true,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true,
+    "customConditions": ["development"],
+    "paths": {
+      "@xstack/app-kit/*": ["packages/app-kit/src/*"],
+      "@xstack/event-log": ["packages/event-log/src/"],
+      "@xstack/event-log/*": ["packages/event-log/src/*"],
+      "@xstack/fx/*": ["packages/fx/src/*"],
+      "@xstack/remix/*": ["packages/remix/src/*"],
+      "@xstack/sql-kysely/*": ["packages/sql-kysely/src/*"],
+      "@xstack/sql-op-sqlite/*": ["packages/sql-op-sqlite/src/*"]
+    },
+    "plugins": [
+      {
+        "name": "@effect/language-service"
+      }
+    ]
+  },
+  "exclude": ["**/node_modules", "**/dist", "**/coverage", "**/public"]
+}

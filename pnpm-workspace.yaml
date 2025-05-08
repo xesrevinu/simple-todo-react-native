@@ -1,0 +1,49 @@
+packages:
+  - apps/*
+onlyBuiltDependencies:
+  - '@parcel/watcher'
+  - '@swc/core'
+  - esbuild
+  - msgpackr-extract
+  - nx
+  - electron
+overrides:
+  metro-runtime: 0.82.2
+  react: 19.2.0-canary-e9db3cc2-20250501
+  react-dom: 19.2.0-canary-e9db3cc2-20250501
+  react-is: 19.2.0-canary-e9db3cc2-20250501
+  scheduler: 0.27.0-canary-e9db3cc2-20250501
+  array-flatten: npm:@nolyfill/array-flatten@^1
+  deep-equal: npm:@nolyfill/deep-equal@^1
+  es-set-tostringtag: npm:@nolyfill/es-set-tostringtag@^1
+  harmony-reflect: npm:@nolyfill/harmony-reflect@^1
+  is-arguments: npm:@nolyfill/is-arguments@^1
+  is-core-module: npm:@nolyfill/is-core-module@^1
+  is-generator-function: npm:@nolyfill/is-generator-function@^1
+  is-typed-array: npm:@nolyfill/is-typed-array@^1
+  isarray: npm:@nolyfill/isarray@^1
+  safe-buffer: npm:@nolyfill/safe-buffer@^1
+  safer-buffer: npm:@nolyfill/safer-buffer@^1
+  side-channel: npm:@nolyfill/side-channel@^1
+  which-typed-array: npm:@nolyfill/which-typed-array@^1
+patchedDependencies:
+  react-native-macos: patches/react-native-macos.patch
+  '@op-engineering/op-sqlite': patches/@op-engineering__op-sqlite.patch
+  react-native: patches/react-native.patch
+  '@expo/cli': patches/@expo__cli.patch
+peerDependencyRules:
+  allowAny:
+    - react
+    - react-dom
+    - react-is
+    - scheduler
+    - '@types/react'
+    - '@types/react-dom'
+publicHoistPattern:
+  - '*expo*'
+  - 'react-native*'
+  - '@react-native*'
+  - '@tamagui/*'
+  - '@babel/*'
+  - '@electron/*'
+  - '@electron-*'

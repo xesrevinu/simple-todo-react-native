@@ -1,0 +1,70 @@
+{
+  "name": "simple-todo-mobile",
+  "version": "0.0.1",
+  "private": true,
+  "nx": {
+    "name": "simple-todo-mobile"
+  },
+  "type": "module",
+  "op-sqlite": {
+    "sqlcipher": false
+  },
+  "browserslist": {
+    "production": [
+      "defaults",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "@babel/runtime": "7.27.1",
+    "@craftzdog/react-native-buffer": "6.0.5",
+    "@expo/metro-config": "0.20.14",
+    "@op-engineering/op-sqlite": "13.0.1",
+    "@react-native/assets-registry": "0.79.2",
+    "@react-navigation/native": "7.1.8",
+    "@react-navigation/stack": "7.3.1",
+    "expo": "53.0.8",
+    "expo-crypto": "14.1.4",
+    "expo-dev-client": "5.1.8",
+    "expo-file-system": "18.1.9",
+    "expo-font": "13.3.1",
+    "expo-linear-gradient": "14.1.4",
+    "expo-linking": "~7.1.4",
+    "expo-localization": "16.1.5",
+    "expo-network": "7.1.5",
+    "expo-router": "5.0.6",
+    "expo-secure-store": "14.2.3",
+    "expo-system-ui": "5.0.7",
+    "metro-config": "0.82.3",
+    "react": "19.2.0-canary-e9db3cc2-20250501",
+    "react-dom": "19.2.0-canary-e9db3cc2-20250501",
+    "react-is": "19.2.0-canary-e9db3cc2-20250501",
+    "react-native": "0.79.2",
+    "react-native-gesture-handler": "2.25.0",
+    "react-native-quick-crypto": "0.7.13",
+    "react-native-reanimated": "3.17.5",
+    "react-native-safe-area-context": "5.4.0",
+    "react-native-screens": "4.11.0-beta.2",
+    "react-native-svg": "15.11.2",
+    "react-native-svg-transformer": "1.5.1",
+    "readable-stream": "4.7.0",
+    "scheduler": "0.27.0-canary-e9db3cc2-20250501"
+  },
+  "devDependencies": {
+    "@tamagui/babel-plugin": "^1.126.8",
+    "@react-native-community/cli": "^18.0.0",
+    "@react-native/metro-config": "^0.79.2",
+    "@rnx-kit/metro-config": "^2.0.1",
+    "@rnx-kit/metro-resolver-symlinks": "^0.2.1",
+    "@rnx-kit/tools-node": "^3.0.2",
+    "babel-preset-expo": "~13.1.11",
+    "expo-atlas": "^0.4.0",
+    "expo-dev-client": "5.1.8",
+    "@expo/metro-config": "0.20.14"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "paths": {
+      "@xstack/event-log/*": ["packages/event-log/src/*"],
+      "@xstack/fx/*": ["packages/fx/src/*"],
+      "@xstack/remix/*": ["packages/remix/src/*"],
+      "@xstack/sql-kysely/*": ["packages/sql-kysely/src/*"],
+      "@xstack/sql-op-sqlite/*": ["packages/sql-op-sqlite/src/*"],
+      "@xstack/app-kit/*": ["packages/app-kit/src/*"],
+      "@core/*": ["apps/simple-todo/src/*"],
+      "@/*": ["apps/simple-todo-web/*"]
+    }
+  },
+  "exclude": [
+    "out-tsc",
+    "dist",
+    "**/*.test.ts",
+    "**/*.spec.ts",
+    "**/*.test.tsx",
+    "**/*.spec.tsx",
+    "**/*.test.js",
+    "**/*.spec.js",
+    "**/*.test.jsx",
+    "**/*.spec.jsx",
+    "test-setup.ts"
+  ],
+  "include": ["**/*.ts", "**/*.tsx", "vite.config.ts"]
+}

@@ -1,0 +1,35 @@
+*.pbxproj -text
+**/Pods/** -text linguist-vendored
+
+# React Native specific
+*.js linguist-language=JavaScript
+*.jsx linguist-language=JavaScript
+*.ts linguist-language=TypeScript
+*.tsx linguist-language=TypeScript
+*.json linguist-language=JSON
+*.jsonl linguist-language=JSON
+*.jsonc linguist-language=JSON
+*.gradle linguist-language=Gradle
+*.plist linguist-language=XML
+*.xib linguist-language=XML
+*.storyboard linguist-language=XML
+*.pbxproj linguist-language=XML
+*.xcworkspacedata linguist-language=XML
+*.xcscheme linguist-language=XML
+
+# Binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.mov binary
+*.mp4 binary
+*.mp3 binary
+*.flv binary
+*.fla binary
+*.swf binary
+*.ttf binary
+*.otf binary
+*.woff binary
+*.woff2 binary

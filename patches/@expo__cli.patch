@@ -1,0 +1,16 @@
+diff --git a/build/src/export/exportHermes.js b/build/src/export/exportHermes.js
+index caa0f4ae071a57b57fd33b70a4142b2cca1128b7..ac1555e0a272e70f978a408350187d5d14176f34 100644
+--- a/build/src/export/exportHermes.js
++++ b/build/src/export/exportHermes.js
+@@ -94,6 +94,11 @@ function isEnableHermesManaged(expoConfig, platform) {
+                 var _expoConfig_ios;
+                 return (((_expoConfig_ios = expoConfig.ios) == null ? void 0 : _expoConfig_ios.jsEngine) ?? expoConfig.jsEngine) !== 'jsc';
+             }
++        case 'macos':
++            {
++                var _expoConfig_macos;
++                return (((_expoConfig_macos = expoConfig.macos) == null ? void 0 : _expoConfig_macos.jsEngine) ?? expoConfig.jsEngine) !== 'jsc';
++            }
+         default:
+             return false;
+     }

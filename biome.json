@@ -1,0 +1,83 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.0.0-beta.2/schema.json",
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": false
+  },
+  "files": {
+    "ignoreUnknown": false,
+    "includes": [
+      "**",
+      "!.direnv/**",
+      "!.nx/**",
+      "!**/.tamagui/**",
+      "!**/ios/**",
+      "!**/android/**",
+      "!**/macos/**",
+      "!**/node_modules/**",
+      "!**/__test__/**/*.json",
+      "!**/fixtures/**/*.json",
+      "!**/fixtures/**/*.js",
+      "!**/coverage",
+      "!**/build/**"
+    ]
+  },
+  "formatter": {
+    "enabled": true,
+    "formatWithErrors": true,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineWidth": 120,
+    "lineEnding": "lf"
+  },
+  "assist": {
+    "enabled": true,
+    "actions": { "source": { "organizeImports": "on" } }
+  },
+  "javascript": { "formatter": { "semicolons": "asNeeded" }, "jsxRuntime": "transparent" },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "complexity": {
+        "noForEach": "off",
+        "noBannedTypes": "off",
+        "noStaticOnlyClass": "off",
+        "noThisInStatic": "off"
+      },
+      "security": {
+        "noDangerouslySetInnerHtml": "off"
+      },
+      "a11y": {
+        "noSvgWithoutTitle": "off",
+        "useKeyWithClickEvents": "off",
+        "useAnchorContent": "off"
+      },
+      "suspicious": {
+        "noExplicitAny": "off",
+        "noEmptyInterface": "off",
+        "noShadowRestrictedNames": "off",
+        "noConfusingVoidType": "off"
+      },
+      "correctness": {
+        "useYield": "off"
+      }
+    }
+  },
+  "overrides": [
+    {
+      "includes": ["**/packages/**", "!**/node_modules/**"],
+      "linter": {
+        "rules": {
+          "suspicious": {
+            "noExplicitAny": "off"
+          },
+          "style": {
+            "noNonNullAssertion": "off"
+          }
+        }
+      }
+    }
+  ]
+}

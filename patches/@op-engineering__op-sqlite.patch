@@ -1,0 +1,13 @@
+diff --git a/op-sqlite.podspec b/op-sqlite.podspec
+index b8568b91ae3f578512a9687e71801182e3457b5e..b8ca3c73461e4e9e8942cecfa5c9ec24d996bac5 100644
+--- a/op-sqlite.podspec
++++ b/op-sqlite.podspec
+@@ -14,7 +14,7 @@ parent_folder_name = File.basename(__dir__)
+ app_package = nil
+ # When installed on user node_modules lives inside node_modules/@op-engineering/op-sqlite
+ if is_user_app
+-  app_package = JSON.parse(File.read(File.join(__dir__, "..", "..", "..", "package.json")))
++  app_package = JSON.parse(File.read(File.join(__dir__, "package.json")))
+ # When running on the example app
+ else
+   app_package = JSON.parse(File.read(File.join(__dir__, "example", "package.json")))
